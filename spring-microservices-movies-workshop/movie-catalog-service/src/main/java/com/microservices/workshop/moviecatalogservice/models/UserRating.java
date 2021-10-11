@@ -1,4 +1,4 @@
-package com.microservices.workshop.ratingsdataservice.model;
+package com.microservices.workshop.moviecatalogservice.models;
 
 import java.util.Arrays;
 import java.util.List;
