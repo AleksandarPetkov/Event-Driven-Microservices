@@ -1,30 +1,73 @@
-version: "3.8"
+  Skip to content
+    Search or jump to…
+    Pull requests
+    Issues
+    Marketplace
+    Explore
 
-services:
+    @AleksandarPetkov
+    eazybytes
+    /
+    microservices-with-spring-sectionwise-code
+    Public
+    1
+    36
+    Code
+    Issues
+    Pull requests
+    Actions
+    Projects
+    Wiki
+    Security
+    Insights
+    microservices-with-spring-sectionwise-code/section8/accounts/docker-compose.yml
+    @eazybytes
+    eazybytes Thanks for choosing to learn from EazyBytes
+    Latest commit 484460d on Oct 1
+    History
+    1 contributor
+    30 lines (25 sloc)  476 Bytes
 
-  accounts:
-    image: eazybytes/accounts:latest
-    mem_limit: 700m
-    ports:
-      - "8080:8080"
-    networks:
-      - eazybank-network
-    
-  loans:
-    image: eazybytes/loans:latest
-    mem_limit: 700m
-    ports:
-      - "8090:8090"
-    networks:
-      - eazybank-network
-    
-  cards:
-    image: eazybytes/cards:latest
-    mem_limit: 700m
-    ports:
-      - "9000:9000"
-    networks:
-      - eazybank-network
-    
-networks:
-  eazybank-network:
+  version: "3.8"
+
+  services:
+
+    accounts:
+      image: eazybytes/accounts:latest
+      mem_limit: 700m
+      ports:
+        - "8080:8080"
+      networks:
+        - eazybank-network
+
+    loans:
+      image: eazybytes/loans:latest
+      mem_limit: 700m
+      ports:
+        - "8090:8090"
+      networks:
+        - eazybank-network
+
+    cards:
+      image: eazybytes/cards:latest
+      mem_limit: 700m
+      ports:
+        - "9000:9000"
+      networks:
+        - eazybank-network
+
+  networks:
+    eazybank-network:
+    © 2021 GitHub, Inc.
+    Terms
+    Privacy
+    Security
+    Status
+    Docs
+    Contact GitHub
+    Pricing
+    API
+    Training
+    Blog
+    About
+    Loading complete
